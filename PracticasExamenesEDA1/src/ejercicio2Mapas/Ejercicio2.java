@@ -1,7 +1,6 @@
 package ejercicio2Mapas;
 
 import java.io.File;
-import java.util.Scanner;
 
 public class Ejercicio2 {
 
@@ -27,7 +26,7 @@ public class Ejercicio2 {
 
 		System.out.println(pc.listadoComponentes() + "\n");
 
-
+//fsdgryhthdthdhdrdfgdfgdfgdfg
 
 	}
 

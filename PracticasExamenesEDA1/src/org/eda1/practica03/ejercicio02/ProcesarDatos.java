@@ -25,7 +25,6 @@ public class ProcesarDatos {
 		;
 		String linea;
 		String[] items;
-		String empresa = "", proyecto = "", ciudad = "";
 		try {
 			scan = new Scanner(new File(archivo));
 		} catch (IOException e) {
@@ -314,10 +313,7 @@ public class ProcesarDatos {
 	public TreeMap<String, TreeSet<String>> devolverCiudadesEmpresas() {
 		TreeMap<String, TreeSet<String>> aux = new TreeMap<String, TreeSet<String>>();
 
-		String resultado = "";
-		int numResultado = -1;
 
-		TreeMap<String, Integer> proyectosDeCiudad = new TreeMap<String, Integer>();
 
 		for (Entry<String, TreeMap<String, TreeSet<String>>> emp : mapa.entrySet()) {
 			for (Entry<String, TreeSet<String>> proy : emp.getValue().entrySet()) {
@@ -325,7 +321,7 @@ public class ProcesarDatos {
 					if (aux.containsKey(ciu))
 						aux.get(ciu).add(emp.getKey());
 					else {
-						TreeSet<String> empresas = new TreeSet<String>(new Greater());
+						TreeSet<String> empresas = new TreeSet<String>(new Greater<String>());
 						empresas.add(emp.getKey());
 						aux.put(ciu, empresas);
 					}

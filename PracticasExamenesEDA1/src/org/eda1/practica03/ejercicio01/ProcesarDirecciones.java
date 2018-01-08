@@ -1,7 +1,6 @@
 package org.eda1.practica03.ejercicio01;
 
 import java.util.ArrayList;
-import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Scanner;
 import java.util.TreeMap;
@@ -30,7 +29,6 @@ public class ProcesarDirecciones {
 	 */
 	public void cargarArchivo(String archivo) {
 
-		Integer cont = null;
 		String[] items = null;
 		String linea;
 		Scanner scan = null;
@@ -208,7 +206,6 @@ public class ProcesarDirecciones {
 
 	public int getContador(String direccion, String maquina) {
 
-		ArrayList<String> arr = new ArrayList<String>();
 
 		for (Entry <String, TreeMap<String, Integer>> entrada1 : mapa.entrySet()) {
 			for (Entry <String, Integer> entrada2 : entrada1.getValue().entrySet()) {
