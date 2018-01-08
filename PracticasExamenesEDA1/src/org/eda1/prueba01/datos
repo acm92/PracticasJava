@@ -1,0 +1,34 @@
+%Datos de pescadores y de lonjas
+%El archivo de entrada se divide en dos secciones: @Lonjas y @Pescadores
+
+
+%Descripcion de las lonjas
+
+%Cada lonja tiene asociado un grupo de pescadores; A cada pescador se le asigna un identificador unico asociado al orden en el que aparece en el archivo de entrada (empezando por 1)
+%Cada lonja lleva un control de pescadores independiente, es decir, se le asignara el identificador 1 al primer pescador, 2 al segundo, y asi sucesivamente
+%Para simplificar el problema, vamos a permitir que el nombre del pescador se repita, incluso dentro de una misma lonja
+
+@Lonjas
+Lonja1 
+Juan Lopez; Antonio Sanchez; Emilio Cuadrado; Angel Sanchez
+
+Lonja2
+Juan Lopez; Antonio Perez; Angel Aguilera; Angel Amate
+
+
+
+Lonja3 
+Emilio Santiago; Angel Cortes; Manuel Andres; Andres Smith
+
+%Descripcion de ventas
+
+% En cada linea de la seccion de ventas vamos a especificar la siguiente informacion: idLonja - idPescador => kilos_tipoPescado1 kilos_tipoPescado2  ... kilos_tipoPescadoN
+% Para simplificar el problema, vamos a ignorar el tipo de pescado, acumulando todos los kilos vendidos en una unica variable (ver clase Pescador) 
+
+@Ventas
+1 - 1 => 3 2 4 3 2 1
+1 - 2 => 2 1 1
+2 - 1 => 2 2
+2 - 4 => 1 1 1 1
+3 - 3 => 4 5 1
+1 - 1 => 2 1

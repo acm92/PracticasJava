@@ -1,0 +1,10 @@
+@tipos de procesador
+Procesador: i3, i5, i7, fx8350, fx9590
+@capacidades de los discos duros
+DiscoDuro: 1TB, 2TB, 500GB
+LAN: 10, 100, 1000
+Wifi: a, c, b, g, n
+@capacidades de los SSD
+SSD: 128GB, 256GB
+@capacidades de la RAM
+RAM: 4GB, 8GB, 16GB, 32GB
